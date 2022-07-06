@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+.header_image{
+   width: 70%;
+   height: 100%; 
+}
+.header_menu{
+    display: flex;
+    gap: 10px;
+    color:black;
+    align-items: center;
+}
+.header_menu_link:hover {color: #bc3e59}
+.header_menu a {
+    color: black;
+}
+.header_menu a:hover {color: #bc3e59}
+.login{
+    border: rgb(235, 108, 129) solid;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+}
+.header_menu a:link { 
+    text-decoration: none; 
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 4%;
+    padding-top: 1%;
+    position: fixed;
+    top: 0px;
+}
+h1{
+    text-align: center;
+}
+.pricing_list{
+    width: 100%;
+    display: flex;
+}
+.pricing_left{
+    width: 50%;
+
+}
+.pricing_right{
+    width: 50%;
+}
+.price{
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 35%;
+}
+.team_heading{
+    width: 100%;
+    display: flex;
+}
+.beta{
+    margin-left: 2%;
+    border-radius: 10px;
+    border-color: #bc3e59;
+    border-style: solid;
+    color:aliceblue;
+    height: fit-content;
+    margin-top: 3%;
+    padding: 0px 2px;
+    background-image: linear-gradient(to right,rgb(248, 4, 0),rgb(255, 192, 1));
+}
+.double_price_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.priceitem{
+    border-radius: 8px;
+    line-height: 50px;
+    box-shadow:1px 1px 10px #949b9b;
+    width: 45%;
+    font-size: smaller;
+    transition: transform .5s;
+}
+.border_color{
+    background-color: #5368df;
+    border-radius: 10px 10px 0px 0px;
+    border: 10px;
+    height: 5px;
+    width: 100%;
+}
+#third_price{
+    background-color: #5368df;
+}
+#second_price{
+    background-color: #5368df;
+}
+#first_price{
+    background-color: #5368df;
+}
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+  li:before {
+    content: "\2714";
+    color: #bc3e59;
+    padding-right: 5px;
+  }
+  .wrong_symbol:before{
+    content: "\2716";
+    color: #bc3e59;
+    padding-right: 5px;
+  }
+  button{
+    border-color: #ca3e4a;
+    color: #ca3e4a;
+    background-color: #fcedee;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3%;
+  }
+  .footer{
+    margin-top: 5%;
+    width: 100%;
+    height:100px;
+    background-color: #5368df;
+}
+.footer a{
+    color: aliceblue;
+}
+.icon{ 
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-top: 2%;
+}
+.footer_link{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
