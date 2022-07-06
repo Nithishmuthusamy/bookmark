@@ -3,6 +3,10 @@
   <head>
     <title>Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://css.gg/instagram.css" rel="stylesheet" />
+    <link href="https://css.gg/google.css" rel="stylesheet" />
+    <link href="https://css.gg/facebook.css" rel="stylesheet" />
+    <link href="https://css.gg/microsoft.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -13,10 +17,11 @@
           />
         </div>
         <div class="header_menu">
-          <a class="header_menu_link" href="#">FEATURES</a>
-          <a class="header_menu_link" href="#">PRICING</a>
-          <a class="header_menu_link" href="#">CONTACT</a>
-          <a class="login" href="#">LOGIN</a>
+          <a class="header_menu_link" id="home_tab" href="#">HOME</a>
+          <a class="header_menu_link" href="#features_nav">FEATURES</a>
+          <a class="header_menu_link" href="pricing.html">PRICING</a>
+          <a class="header_menu_link" href="contactpage.html">CONTACT</a>
+          <a class="login" href="login.html">LOGIN</a>
         </div>
       </div>
     </header>
@@ -41,7 +46,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="features_nav">
         <div class="features">
           <h4>Features</h4>
           <p>
@@ -96,14 +101,22 @@
           <img
             class="extension_image"
             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIHBhUSBxEWFRIXFRgYEhcXFxoXGRcYGBUYFhgfFhUkHTIhGxslGxkYITEhJSorLjQuGCA1ODMtNystLjABCgoKDg0OGxAQGi0lHyU3LS0tKy0tLSstLS4rLS03LS0wLS0tLS0tKy8tMi8vMi0tLS0tLystLS0rLS8rLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQECAwj/xABDEAACAQEEBgQKBwYHAAAAAAAAAQIDBAUREgYHITFBURNhcYEUIiMyUmJykZKhFSRCgqKxwTNTY5OjwkNzg7LR4fD/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EADYRAQABAgIGCQQBAwUBAAAAAAABAgMEEQUSITFBURMiYXGBkaHB0Qax4fBCFDLxIzNSYnIk/9oADAMBAAIRAxEAPwC8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1qVFSpuVVpRW1tvBJdbEzkzTTNU5UxnKKXrrBsdhbVncq0v4a8X43gmvZxI9WJojdtXmG+nsXd21xFEdu/wAo2+eSM2zWbaKj+p0KUF6zlUfyymmcVVwhc2vpixT/ALldU92UfLV1tPbwqebWjH2acP7kzxOIuc0ynQGBp30TPfM+0w4paeXhTfjV1L2qdP8ASKEX7nNmrQOAndRl3TPvMtjZNZlqpP63SpVF1ZoP34tfI9Riq+MIl36Zw1X9lVUeU/H3SS69Y9ltTStsZ0Zc2s0MfaW3vaRvpxNM79inxH05ire23MVx2bJ8p9plLrNaYWuip2WcZwe6UWpJ9jRviYmM4UVy3Xbq1a4mJ5Tsepl4AAAAAAAAAAAAAAAAAAAAAAIxpVpnRuLGnS8rX9BPZH/Mlw7N+7ctpou34o2b5XOjdC3cX16urRz590e+77Krvq/bRflXG8ajaxxjBbIR7Ifq8X1kGuuqv+6XbYTAWMJTlapy7eM+PtGUdjWnlLAOlatGjHGq8P8A3BB5rrpojOqWvrXuk/Ixx63s+RnJEqxkfxhjSvSq92VdwyaZxVyXCvOqt7XuM5MRirnNs7m0rtF0WjPY5OD45Xsl7UHsl3maZmmc6ZeL9VvEU6t+iKo9Y7uPqt3Q3WRQv2UaV4YUq72Rx2Qm/Vb3S9Vt9Te4mW8RFWyre5fHaHm1E3LE61PL+UfMdseMQnRIUgAAAAAAAAAAAAAAAAAAAEE080z+j27NdEvLbqk1/h9UfX/Lt3Rb17Lq073TaF0L02V+/HV4Rz7Z7Pv3KubcpNyeLbxbe1tve2+LITtIjLZDgABubh0WtWkG2wxUKXGtPzd+DyLfN792zFbWbbdmqvuU+kdMWcJ1N9XKOHemNh1SWSG28q1atPi8VCPdFLFfESqcNTG9y17Td+uc4iI9Z/fBkWrVPd1aGFFVab5xqY/KSaMzh6GqnTGJiduU+HxkhOkuqm03ZTdS6ZeEQWLcUstVLqjun3beo0V4eY2xtWmG0vbuTq3I1Z58Px+7UAdPK8JLBreuXaaFu4yGGTIBaurbWFKFSNk0gnjF4KjWk9qe5RqPiuUvfzUuze/jUoNJaN33bUd8e8LcJbngAAAAAAAAAAAAAAAAAjGnmkn0FduWzPy9TFU/VX2ptdWOzrfJM0X7upGzfK50Lo3+rva1f9lO/t5R89ngpptyljJ4tvFt7W297b4sr30GIy2Q4AATHQPRH6an094r6vF4Rj+9kt/3E9j5vZwZvsWdfrTuc/pvS39NHQ2p6875/wCMfM+kbeS2qcFTgo00lFLBJLBJLYklwRYOGmZmc5dgwAAIDrG0EjfNGVpuqKVpisZRWxVkuD9fk+O58Go96zrbY3rfRukZsz0dyer9vx/nvpTJzILqTIGTIBc+qnSx3nZPBLxljWpxxpye+pTWza+Mo7F1rB8GybYu60as73L6WwMWqulojqzv7J+J/eCwiSpgAAAAAAAAAAAAAADrVqKlTcqjwik229yS2tsTOTNNM1TFMb5UNpFe0r8vidaeODeFNP7MF5q/V9bZVV169U1Pp2AwlOEsU2o3xv7Z4/HdENaeUsA2FwXVK+r3p0KWzM/HfowW2T927raPVFGvVki43FU4WxVdq4bo5zwj94Zr4stnjZLNGnZoqMIpRilwSWCLSIiIyh8yuXKrlc11znM7Zepl4AAAABTOtjRxXbeytNljhTrt50t0au9/EsZdqlzIOIt5TrRxdTofFdLb6KrfTu7vx8IJkI64MgGTdlsndd4Qr2N4TpyUo9fNPqaxT6mzNNU0znDxdtU3aJoq3S+jbpvCF63bTr2bzakVJc1jvT608U+wtKaoqjOHC3rVVq5NFW+GWZawAAAAAAAAAAAAAES1mXl4Do04U3hKtJU/u7ZT7mll+8R8TVlRlzXn0/hulxcVzuojPx4eu3wU+QHfAACy9Ut2ZbNVtM1tk+jh7McJSw7ZNL7hMwtO+px/1Nic66LEcOtPfO7yj7rCJblQAAAAANJpndX0zo1WpRWM8uan7cPGj72sOxs13adamYS8Df6G/TXw3T3TvUAo4rFFY7jJzkMhkAtXU7eTqXfVs1R/s5KcPZqY4pdkk398mYWrZNLmtOWMq6bscdk98fj7LEJShAAAAAAAAAAAAAAVXrbtfSXzRpLdCk5d9SWH5U17yDip60Q7X6Ztatiu5znLyj8oLiRnSGIDEC89CrL4HopZ4pYY01N9tTyj+ciysxlRD5vpa70uNuVduXls9m7NquAAAAAAAfPl+2HwG+69JLBRqzUV6uZuP4WiqrjKqYd7hrnSWaK+cR58fVg5Dy3mQCUatLT4JpdTXCpCdN/D0i+cEu83Yecq1Zpe3r4WqeWU+3uuksXHAAAAAAAAAAAAAAKW1k1uk0wqr0Y04/01P+4rsROdyX0DQNOrgaJ55z65eyM4mlcGIHWo/JvsYZp3vouxw6KyQiuEYr3JIto3PlN2rWrmecy9jLwAAAAAAApXT6ll0wtGHFwfvow/XErb/wDuS7XRU54Sjx+8o/kNSwMgG00Wl0Gktmf8aC+KSh+p7tTlXCLjqdbDXI7J9Nq9i0cIAAAAAAAAAAAAAApPWRT6PTKs39pU5L+VGP8AaV1+P9SX0DQVWeBojlnHrM+6M4mpbmIHWo/JvsZiY2M0ztfR9ln0lmi1xin70W0bnyq5GVUw9TLwAAAAAAApzTzx9La/U4L+lArb8/6ku10TGWDo8fvLQZDSsTIBsdG6PSaQ2dL99TfwzUv0NlvbXCLjatXD3J7J9YXiWjgwAAAAAAAAAAAAAFSa3bN0V/06nCdHDvhJ4/KcSDiY6+btPpy7nh6qOU/ePxKC4mh0OZiDMbxBmvzQ61+G6LWaeOL6KMZP1oLJL8UWWNqc6IfONJWujxdyntmfCdsejcmxBAAAAAAAUppBW8LvytNbnVlh2J5V8kiquTnXMu+wdvo8PRT2R6sDIeEkyAb/AEEsvT6T03wgpTfdFxX4pI3YeM7kKzS9zUwlXblHr8QtssnFgAAAAAAAAAAAAAIRrZu3wvR1Vqa8ajNSfPJPxJfPK/ukfEU5058l99P4jo8TNud1UesbY948VO5iE7TMzAzMwM1s6n7z6e6qlnm/GpzzR9ipt2dklL4kTMNVsmlx/wBRWNW9Tej+UZT3x+MlgElzoAAAAAGBftu+jboqVeMYvL7T2R+bR4uVatMyk4Ox09+m3znb3cfRTahgiqd+5ygMoE61a2DLCrXkt+FOHYvGl3Y5fhJmFp31Oa0/f20Wo759vfzTgmOcAAAAAAAAAAAAAAeVrs0bZZZU7QsYTi4yXNSWD+RiYiYyl7t11W6orp3xth8633ds7lvWpQtO+EsE/SjvjJdqwZXVUzTOUvo2GxFOItU3aePpPGGDieW/MxBm3OiF+PR+/wCnWfmeZWXOnLDN7mlLDnE926tSrNC0hhf6rD1W+O+O+Pnd4voKnUVWmpUmnFpNNbU09qafIsXz2YmJyl2DAAAAAIBrCvbprRGz0Xsh41T2mvFXcnj3rkQcTcznVh1Og8Jq0zfq47I7uM+Pt2ocRV+Ad6NKVetGFFYyk0orm28EZiJmcoea66aKZqq3RtXDdFgV2XbClT+ytr5t7ZPvbbLSinVpiHAYq/N+7Vcnj9uHozD20AAAAAAAAAAAAAAAEG1oaLO+LvVosMca9JPFLfUp72lzlHa12tcUaL9vWjWjeu9DaQ6Cvoq56tXpP54+Cls2JDdlmZgZmYGay9WGmis6VivaWEccLPN7lj9iT5Y+a+7kSLN3Lqy5vTOjZrmb9qNv8o9/nz5rXJblgAAA0OlWkMbms2Wi068l4kfRXpS6uS4vvw0Xr0URlG9Z6N0dVia9arZRG+efZH7s8lXTm6k26jbbbbb3tva2+srnaRERGUbnAZAJzoDceX61alvWFFPk9jl3rYurHmiZhrX858HNabx2f/z0T/6+Pnt7k3JjnAAAAAAAAAAAAAAAAAAqfWToI6c5Wy5IYxeMq9KK2p73OC4rmuG/nhFu2sutS6fRWlYyizenun2n2VfmI7o83OYyxm4zGGc0/wBDtZFW7IKje3laS2Rk340VyzcV2+9G2i7VT2wpsboe1fnXo6tXpPh8eSy7HphY7VBPpcjfCaa/F5vuZvjEW54qG7ojFUfxz7p/Z9HtW0osdGOMq8X7OMn7kjM37ccWujReLqnKKJ8dn3R2+NO3KLjdEGvXnh+GH6v3GivFcKVthdBZTrX58I95+PNDK1WVeq5VpOUm8ZNvFt9bIkznOcuhpppopimmMoh0MPQBJ9EtGXec1VtqwoLcv3j6vV5vjuJFmzrbZ3KbSek4sRNu3PX+35WRFZY4R2LgWDkZnPbLkMAAAAAAAAAAAAAAAAAAArzTXVrTvWcq1x5aVZ7ZQeynUfFr0Jdmx9WLZors57aV3gNMVWoii7tp58Y+Y/exUF53fWum1uleVOVOa4SW/ri90l1rFEaYmJyl01q/bu061E5wxMwbczMDNl2O86lj/ZPxfRe1f9dxiaYkzbiz6RU5r6xFxfV4y/5+RrmiTNmwvWhNbKse/Z+ZjVlnOHaV50YrbVj78TGrJnDzpXrG02hU7vhOtUl5sYRbbPUUTLxXdpop1qpyhP8ARnQipUaq6R4Jb40IvFf6s/tezHZzbTwJVvDRG2pzuO03M9TD7P8At8fO/uT+MVCOEVglsSXAludmc3IAAAAAAAAAAAAAAAAAAAAAGHed10b2s3R3lSjUhykscHzT3p9a2mJpidktlq9Xaq1qJylX99aoKFeTlc1eVJ+hNdJHsTxUl35jTNjlK4s6cuU7LlOfbGyfj7Ibb9V95WR+SpwqrnTqL8pZWa5tVxwWVvTGGq3zMd8fGbTWjRC8LO/KWKu/Zpyn/txPOrVySqcfhqt1ceeX3daOid4VpYQsNo+9SlH5tIxq1cirHYeN9ceebb2HVpedrl49CNNc6lSK+UW5fI9Rarngj16Xw1O6c+6PnJLrl1PRg1K+7S5bsYUllX8x7WvupmyLHOVde07VOy1Tl2z8f5WHctxWa46GW6qMaa4tLGUvam9su9m6mmKdymvYi7enO5Vm2J6aQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z"
-          /><div class="extension_content"><strong>Add to extension</strong></div>
+          />
+          <div class="extension_content"><strong>Add to extension</strong></div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <a href="#">Features</a>
-      <a href="#">Pricing </a>
-      <a href="#">Contact</a>
+      <span class="footer_link">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing </a>
+        <a href="contactpage.html">Contact</a></span>
+      <div class="icon">
+        <i class="gg-instagram"></i>
+        <i class="gg-google"></i>
+        <i class="gg-facebook"></i>
+        <i class="gg-microsoft"></i>
+      </div>
     </footer>
   </body>
 </html>
